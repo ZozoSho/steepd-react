@@ -1,38 +1,298 @@
-.App {
-  text-align: center;
+h1 {
+  font-family: 'Carter One', sans-serif;
+  font-weight: 700; 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+  font-family: 'Carter One', sans-serif; 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+  color: inherit;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+.navbar {
+  background-color: #a9c4f7;
+  border-bottom: 4px solid black; 
+}
+
+.navbar-nav {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 700; }
+
+.nav-item {
+  font-size: 20px;
+  transition: 1000ms;
+  margin-right: 1rem;
+  color: black; 
+}
+
+nav .navbar-nav li a {
+  color: black !important; 
+}
+
+.dropdown-menu {
+    border: solid black 3px;
+    padding: 0;
+    width: 300px;
+    font-size: 1.25rem;
+}
+
+.dropdown-item {
+    margin: 0;
+    padding: 1rem;
+    color: black !important;
+}
+
+.dropdown-divider {
+    margin: 0;
+}
+
+.customdropdown {
+    background-color: #FFEFAE;
+}
+
+#navlogo {
+  display: block;
+  text-indent: -9999px;
+  height: 160px;
+  width: 318.75px;
+  margin-bottom: -4rem;
+  background-size: 318.75px 160px; }
+
+#navlogomobile {
+  display: none; 
+}
+
+.main-row {
+  max-width: 100%;
+  padding: 0 0 0 1rem;
+  margin: 0 -1rem; }
+
+.carousel-div {
+  padding-right: 0; }
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 2rem;
+  border-radius: 10px; }
+
+.customizer {
+  background-color: #FFEFAE;
+  margin: 0;
+  border: 2px dashed black;
+  border-top: 0;
+  padding: 1.5rem;
+  height: 60%;
+  transition: 500ms; }
+
+.customizer:hover {
+  background-color: orange; }
+
+/*  .clickhere {
+     position: absolute; 
+     color: white;
+     font-weight: 700;
+     font-size: 3rem;
+     top: 4rem;
+ } */
+#custombannerimg {
+  border: solid black;
+  border-radius: 3px; }
+
+.join {
+  background-color: #212172;
   color: white;
+  margin: 0;
+  padding-left: 1.25rem;
+  height: 40%;
+  align-items: center; }
+
+.join-text {
+  font-size: 2.5rem; }
+
+.sign-up {
+  color: #000;
+  font-weight: bold;
+  background-color: #FFEFAE;
+  border: solid black 2px;
+  border-radius: 10px;
+  width: 235px;
+  transition: 500ms;
+  font-size: 1.25rem;
+  margin-left: 20%; }
+
+.sign-up:hover {
+  background-color: orange; }
+
+.submit {
+  color: #000;
+  font-weight: bold;
+  background-color: #FFEFAE;
+  border: solid black 2px;
+  border-radius: 10px;
+  transition: 500ms; }
+
+.submit:hover {
+  background-color: orange; }
+
+.exit {
+  color: white;
+  font-weight: bold;
+  background-color: black;
+  border: solid black 2px;
+  border-radius: 10px;
+  transition: 500ms; }
+
+.exit:hover {
+  background-color: black;
+  color: white; }
+
+.modal-header {
+  color: white;
+  background-color: black; }
+
+.social {
+  background-color: black;
+  height: 40%;
+  width: 65px;
+  margin: 0;
+  padding: .5rem 0;
+  position: absolute;
+  bottom: 0;
+  right: 0; }
+
+.btn-social-icon {
+  margin: .5rem 1rem; }
+
+@media only screen and (max-width: 1429px) {
+  .customtitle {
+      font-size: 1.75rem;
+  }
+} 
+
+@media only screen and (max-width: 1274px) {
+  .customtitle {
+      font-size: 1.35rem;
+  }
+  .join-text {
+      font-size: 1.5rem;
+  }
 }
 
-.App-link {
-  color: #61dafb;
+@media only screen and (max-width: 1130px) {
+  .customtitle {
+      font-size: 1.3rem;
+  }
+
+  .btn-social-icon {
+      margin: .25rem;
+  }
+
+  .card-img-top {
+      width: 10rem
+  }
+
+  h4 {
+      font-size: 1.3rem;
+  }
+  
+  .sign-up {
+      margin-left: 0;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 991px) {
+  #navlogo {
+      display: block;
+      text-indent: -9999px;
+      height: .85*128px;
+      width: .85*255px;
+      margin-bottom: -3rem;
+      background-size: .85*255px .85*128px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .customizer-tally {
+      position: relative;
+      max-width: none;
+      margin-left: 1rem;
+      border-top: black dashed 2px;
+  }
+  
+  .customizer {
+      margin-left: 1rem;
+      height: 600px;
+  }
+
+  .customtitle {
+      font-size: 2rem;
+      margin-top: 4rem;
+  }
+
+  .join {
+      height: 100px;
+      padding-left: 5.5rem;
+      align-items: center;
+  }
+
+  .social {
+      padding: 0 .8rem;
+      width: 100%;
+      height: 65px;
+      top: 0;
+  }
+
+  .btn-social-icon {
+      margin: 1rem .5rem;
+  }
+
+  .card {
+      margin: 1rem 1rem;
+  }
+} 
+
+@media only screen and (max-width: 767px) {
+   
+  h4 {
+       font-size: 1rem;
+   }
+
+  #navlogo {
+      display: none;
+  }
+  #navlogomobile {
+      display: block;
+      height: .8*128px;
+      width: .8*255px;    
+      position: fixed;
+      top: 0;
+      left: 37%;
+      z-index: 1000;
+      margin-top: .5rem;
+  }
+
+  .card {
+      margin: .5rem;
+  }
+  .carousel-div {
+      padding: 0 0 0 1rem;
+  }
+
+  .join {
+      height: 200px;
   }
 }
+@media only screen and (max-width: 575px) {
+  #navlogomobile {
+      height: .7*128px;
+      width: .7*255px;    
+      background-size: .7*255px .7*128px;
+      left: 35%;
+  }
+}      
+  

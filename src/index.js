@@ -5,6 +5,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'typeface-barlow';
 import 'typeface-carter-one';
 import 'typeface-roboto';
+import 'font-awesome/css/font-awesome.css';
+import 'bootstrap-social/bootstrap-social.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
