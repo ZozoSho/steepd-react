@@ -39,7 +39,7 @@ nav .navbar-nav li a {
 .dropdown-menu {
     border: solid black 3px;
     padding: 0;
-    width: 300px;
+    width: 350px;
     font-size: 1.25rem;
 }
 
@@ -94,13 +94,22 @@ nav .navbar-nav li a {
 .customizer:hover {
   background-color: orange; }
 
-/*  .clickhere {
-     position: absolute; 
-     color: white;
-     font-weight: 700;
-     font-size: 3rem;
-     top: 4rem;
- } */
+.customizer-tally {
+  background-color: #FFEFAE;
+  margin: 0;
+  border: 2px dashed black;
+  border-top: 0;
+  padding: 1.5rem;
+  height: 60%;
+  position: fixed;
+  max-width: 500px;
+  right: 0;
+}  
+
+.card {
+  width: 150px;
+}
+
 #custombannerimg {
   border: solid black;
   border-radius: 3px; }
@@ -279,6 +288,7 @@ nav .navbar-nav li a {
   .card {
       margin: .5rem;
   }
+  
   .carousel-div {
       padding: 0 0 0 1rem;
   }

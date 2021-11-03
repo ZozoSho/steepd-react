@@ -1,4 +1,5 @@
-import React from "react";
+import React from 'react';
+import { Link } from 'react-router-dom';
 import {  } from 'reactstrap';
 import Slideshow from "./SlideshowComponent";
 
@@ -10,17 +11,17 @@ function Home(props) {
                     <Slideshow />
 
                 <div class="col p-0">
-                    <a href="custom.html">
+                    <Link to='/customize'>
                     <div class="row customizer">
                         <h2 class="mx-auto mb-1 text-center customtitle">
                             Create a Custom Tea Blend
                         </h2>
                         <div class="mx-auto">
                             <p class="text-center mb-1"><i>(Click here to start.)</i></p>    
-                            <img src="img/tea-663095_640.jpg" alt="custom tea blend" class="img-fluid mx-auto" id="custombannerimg" />
+                            <img src={process.env.PUBLIC_URL + 'assets/images/tea-663095_640.jpg'} alt="custom tea blend" class="img-fluid mx-auto" id="custombannerimg" />
                         </div>    
                     </div>
-                    </a>
+                    </Link>
                 <div class="row join">
                     <div class="col-sm-6 col-lg-12 pr-5">
                         <h3 class="join-text">
